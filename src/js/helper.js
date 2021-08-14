@@ -9,7 +9,7 @@ const timeout = function (s) {
 };
 
 const aFunction = function () {
-    return `this function was added to the 'new-feature' branch`
+    console.log(`this function was added to the 'new-feature' branch`);
 }
 aFunction();
 export const getJSON = async function (url) {
