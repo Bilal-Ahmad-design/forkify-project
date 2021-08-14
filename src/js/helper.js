@@ -9,9 +9,9 @@ const timeout = function (s) {
 };
 
 const aFunction = function () {
-    `this function was added to the 'new-feature' branch`
+    return `this function was added to the 'new-feature' branch`
 }
-
+aFunction();
 export const getJSON = async function (url) {
     try {
 
