@@ -8,10 +8,14 @@ const timeout = function (s) {
     });
 };
 
+const aFunction = function () {
+    `this function was added to the 'new-feature' branch`
+}
 
 export const getJSON = async function (url) {
     try {
 
+        aFunction();
         const res = await Promise.race([fetch(url), timeout(TIMEOUT_SEC)]);
         const data = await res.json();
 
